@@ -1,9 +1,78 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Lupepe - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
 <body>
-  <h1>Stephen Lupepe</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <header id="nav-container">
+        <div id="nav-bar">
+            <p id="nav-name">Stephen Lupepe</p>
+            <div class="nav-contents">
+                <p class="nav-link"><a href="#About Me">About Me</a></p>
+                <p class="nav-link"><a href="#Projects">Projects</a></p>
+                <p class="nav-link"><a href="#contact-title">Contact</a></p>
+            </div>
+        </div>
+    </header>
+    <div class="sections-container">
+        <section class="mission-container">
+            <div id="black-filter"></div>
+            <div id="mission-text">
+                <h2>Stephen Lupepe</h2>
+                <h4 id="mission-statement">I am a language professional turned programmer currently residing in Fukuoka, Japan.</h4>
+            </div>
+        </section>
+        <section class="content-container">
+            <h2 id="About Me">About Me</h2>
+            <div id="content-wrapper">
+                <div class="content-box">
+                    <p class="content-main">Hi, I'm Stephen. <br><br>
+                        After graduating from Oxford University with a degree in Engineering Science in 2012, I moved to to Japan, 
+                        where I have spent the past 10 years perfecting my Japanese. <br><br>
+                        I am now looking to venture back into the world if science and technology as a programmer, and make full use of
+                        both my tehnical skills and Japanese proficiency. 
+                    </p>
+                </div>
+                <div class="content-box">
+                    <div id="profile-pic">
+                        <div id="white-filter"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-container">
+            <h2 id="Projects">Projects</h2>
+            <div id="content-wrapper">
+                <div class="content-box">
+                    <div id="project-pic1"></div>
+                    <div id="project-pic2"></div>
+                </div>
+                <div class="content-box">
+                    <h4 class="content-main">Here is a list of my projects:</h4>
+                    <ul>
+                        <li>An app for playing and looping audio using PySimpleGUI</li>
+                        <li>A web-based 2D fighting game using Javascript</li>
+                        <li>Multiple practice apps made using PySimpleGUI, including a weather forcecast app, and a YouTube downloader.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="contact-container">
+            <h2 id="contact-title">Stephen Lupepe</h2>
+            <h5>sjlupepe@gmail.com</h5>
+            <h5>080-8807-6598</h5>
+        </section>
+        <footer class="copyright">
+            <h5>Created August 2022</h5>
+        </footer>
+    </div>
+    
 </body>
- 
 </html>
