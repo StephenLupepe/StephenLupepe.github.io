@@ -5,74 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephen Lupepe - Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="nav-container">
+    <div id="background-panel"></div>
+    <section id="nav-container">
         <div id="nav-bar">
             <p id="nav-name">Stephen Lupepe</p>
             <div class="nav-contents">
-                <p class="nav-link"><a href="#About Me">About Me</a></p>
-                <p class="nav-link"><a href="#Projects">Projects</a></p>
-                <p class="nav-link"><a href="#contact-title">Contact</a></p>
+                <p>EN /  <a class="nav-link" href="index-jp.html">JP</a></p>
+                <p><a class="nav-link" href="#">Home</a></p>
+                <p><a class="nav-link" href="#about-title">About Me</a></p>
+                <p><a class="nav-link" href="#projects-title">Projects</a></p>
+                <p><a class="nav-link" href="#contact">Contact</a></p>
             </div>
         </div>
-    </header>
-    <div class="sections-container">
-        <section class="mission-container">
-            <div id="black-filter"></div>
-            <div id="mission-text">
-                <h2>Stephen Lupepe</h2>
-                <h4 id="mission-statement">I am a language professional turned programmer currently residing in Fukuoka, Japan.</h4>
-            </div>
-        </section>
-        <section class="content-container">
-            <h2 id="About Me">About Me</h2>
-            <div id="content-wrapper">
-                <div class="content-box">
-                    <p class="content-main">Hi, I'm Stephen. <br><br>
-                        After graduating from Oxford University with a degree in Engineering Science in 2012, I moved to to Japan, 
-                        where I have spent the past 10 years perfecting my Japanese. <br><br>
-                        I am now looking to venture back into the world if science and technology as a programmer, and make full use of
-                        both my tehnical skills and Japanese proficiency. 
-                    </p>
-                </div>
-                <div class="content-box">
-                    <div id="profile-pic">
-                        <div id="white-filter"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="content-container">
-            <h2 id="Projects">Projects</h2>
-            <div id="content-wrapper">
-                <div class="content-box">
-                    <div id="project-pic1"></div>
-                    <div id="project-pic2"></div>
-                </div>
-                <div class="content-box">
-                    <h4 class="content-main">Here is a list of my projects:</h4>
-                    <ul>
-                        <li>An app for playing and looping audio using PySimpleGUI</li>
-                        <li>A web-based 2D fighting game using Javascript</li>
-                        <li>Multiple practice apps made using PySimpleGUI, including a weather forcecast app, and a YouTube downloader.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="contact-container">
+    </section>
+    <main id="grid-container">
+        <div id="jumbotron"></div>
+        <div class="dark-filter"></div>
+        <div id="jumbotron-text"data-aos="fade-up">
+            <h1>I am a language professional turned programmer currently residing in Fukuoka, Japan.</h1>
+        </div>
+        <div id="about-title">About Me</div>
+        <div id="about-description" data-aos="fade-up">
+            <p>Hi, I'm Stephen. <br><br>
+                After graduating from Oxford University with a degree in Engineering Science in 2012, I moved to to Japan, 
+                where I have spent the past 10 years perfecting my Japanese. <br><br>
+                I am now looking to venture back into the world if science and technology as a programmer, and make full use of
+                both my tehnical skills and Japanese proficiency. 
+            </p>       
+        </div>
+        <div id="about-pic" data-aos="fade-up"></div>
+        <div id="light-filter" data-aos="fade-up"></div>
+        <div id="projects-title" data-aos="fade-up">Projects</div>
+        <div id="project-pic-container" data-aos="fade-up">
+            <div id="project-pic1"></div>
+            <div id="project-pic2"></div>
+        </div>
+        <div id="projects-description" data-aos="fade-up">
+            <h4 class="content-main">Here is a list of my projects:</h4>
+            <ul>
+                <li>An app for playing and looping audio using PySimpleGUI</li>
+                <li>A web-based 2D fighting game using Javascript</li>
+                <li>Multiple practice apps made using PySimpleGUI, including a weather forcecast app, and a YouTube downloader.</li>
+            </ul>
+            <a href="https://github.com/StephenLupepe" target="_blank"><div class="github-button">View Github Profile</div></a>
+        </div>
+        <div id="contact" data-aos="fade-up">
             <h2 id="contact-title">Stephen Lupepe</h2>
             <h5>sjlupepe@gmail.com</h5>
             <h5>080-8807-6598</h5>
-        </section>
-        <footer class="copyright">
+            <a href="https://drive.google.com/file/d/1tOwxuc2l-eNAeYhH3no9dMcPTqKsgdCE/view?usp=sharing" target="_blank">
+                <div class="download-button">Download CV</div>
+            </a>
+        </div>
+        <div id="footer">            
             <h5>Created August 2022</h5>
-        </footer>
-    </div>
-    
+        </div>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 600
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Lupepe - Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style-jp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="background-panel"></div>
+    <section id="nav-container">
+        <div id="nav-bar">
+            <p id="nav-name">Stephen Lupepe</p>
+            <div class="nav-contents">
+                <p><a class="nav-link" href="index.html">EN</a> / JP  </p>
+                <p><a class="nav-link" href="#">ホーム</a></p>
+                <p><a class="nav-link" href="#about-title">私について</a></p>
+                <p><a class="nav-link" href="#projects-title">作ったもの</a></p>
+                <p><a class="nav-link" href="#contact">お問い合せ</a></p>
+            </div>
+        </div>
+    </section>
+    <main id="grid-container">
+        <div id="jumbotron"></div>
+        <div class="dark-filter"></div>
+        <div id="jumbotron-text"data-aos="fade-up">
+            <h1>オックスフォード大学を卒業である、福岡に住んでいるバイリンガルプログラマー</h1>
+        </div>
+        <div id="about-title">私について</div>
+        <div id="about-description" data-aos="fade-up">
+            <p>初めまして、私はルペペ・スティーブン(Stephen Lupepe)と申します。<br><br>
+                私はオックスフォード大学で工学の修士号を取得し、それから日本に来て１０年になります。
+                英語講師と和英の翻訳と通訳を主な仕事として働いてきました。<br><br>
+                本来、工学を専門としておりましたので、もう一度その方面の仕事をしたいと考えています。
+                これまでの英語の仕事で築き上げた言語能力と以前学んだ工学の技術を組み合わせて、今後はプログラマーとして働きたいという希望を持っています。
+                そのためにhtml,css, javascriptとPythonを日々勉強しています。
+            </p>       
+        </div>
+        <div id="about-pic" data-aos="fade-up"></div>
+        <div id="light-filter" data-aos="fade-up"></div>
+        <div id="projects-title" data-aos="fade-up">プロジェクト</div>
+        <div id="project-pic-container" data-aos="fade-up">
+            <div id="project-pic1"></div>
+            <div id="project-pic2"></div>
+        </div>
+        <div id="projects-description" data-aos="fade-up">
+            <h4 class="projects-intro">こちらはプログラミングの勉強で作ってみたプロジェクトのリストです：</h4>
+            <ul>
+                <li>PySimpleGUIを使った簡単なオーディオ、画像などを編集ができる複数のアプリ</li>
+                <li>Javascriptを使った2D格闘ゲーム</li>
+                <li>こちらのウェブサイト！</li>
+            </ul>
+            <a href="https://github.com/StephenLupepe" target="_blank"><div class="github-button">Githubでみる</div></a>
+        </div>
+        <div id="contact" data-aos="fade-up">
+            <h2 id="contact-title">スティーブン・ルペペ</h2>
+            <h5>sjlupepe@gmail.com</h5>
+            <h5>080-8807-6598</h5>
+            <a href="https://drive.google.com/file/d/1tOwxuc2l-eNAeYhH3no9dMcPTqKsgdCE/view?usp=sharing" target="_blank">
+                <div class="download-button">履歴書をダウンロード</div>
+            </a>
+        </div>
+        <div id="footer">            
+            <h5>Created August 2022</h5>
+        </div>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 600
+        });
+    </script>
+</body>
+</html>
