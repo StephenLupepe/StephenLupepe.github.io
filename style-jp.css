@@ -1,29 +1,6 @@
-#background-panel {
-    width: 100%;
-    height: 325%;
-    background-color: #f8f2ea;
-    /* background-image: linear-gradient(-45deg, #f2f2f2, #c2c2c2);
-    background-size: 1000% 1000%;
-    animation: animate-background 60s ease-in-out infinite; */
-    position: absolute;
-    top: -20px;
-    z-index: -1000;
-}
-
-@keyframes animate-background {
-    0% {
-        background-position: 0 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0 50%;
-    }
-}
-
 body {
-    font-family: 'Klee One', cursive;
+    background-color: #f8f2ea;
+    font-family: 'Lato', sans-serif;
     color: #f2f2f2;
     text-align: center;
     display: flex;
@@ -85,8 +62,7 @@ a.nav-link {
     grid-area: 1 / 1 / 2 / 3;
     background-image: url('jumbotron2.png');
     background-repeat: no-repeat;
-    background-size: 120% auto;
-    background-position: -70px -100px;
+    background-size: cover;
 }
 
 .dark-filter {
@@ -98,12 +74,13 @@ a.nav-link {
 
 #jumbotron-text {
     grid-area: 1 / 1 / 2 / 3;
-    font-family: 'Shippori Mincho', serif;
-    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+    width: 800px;
+    font-size: 20px;
     color: white;
-    padding: 10% 14% 0 14%;
+    padding: 300px 10% 0 10%;
     z-index: 900;
-    align-self: center;
+    justify-self: center;
 }
 
 #about-title {
@@ -116,7 +93,7 @@ a.nav-link {
 #about-description {
     grid-area: 3 / 1 / 4 / 2;
     background-color: #1A1B41;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     justify-content: center;
     padding: 5% 15% 0 15%;
 }
@@ -126,7 +103,8 @@ a.nav-link {
     background-image: url('quick-intro-thumb.png');
     background-repeat: no-repeat;
     background-size: auto 40rem;
-    background-position: -190px 0;
+    justify-self: auto;
+    background-position: 40% 0;
 }
 
 #light-filter {
@@ -169,10 +147,6 @@ a.nav-link {
     background-position: 85px -30px;
 }
 
-#projects-intro {
-    padding-bottom: 0%;
-}
-
 #projects-description {
     grid-area: 5 / 2 / 6 / 3;
     color: #1A1B41;
@@ -204,7 +178,7 @@ a.nav-link {
 #contact {
     grid-area: 6 / 1 / 7 / 3;
     background-color: #1A1B41;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     justify-content: center;
     padding: 0 15% 2% 15%;
     display: flex;
@@ -232,4 +206,194 @@ a.nav-link {
 #footer {
     grid-area: 7 / 1 / 8 / 3;
     justify-self: left;
+}
+
+@media only screen and (max-width: 1000px) {
+    #nav-name{
+        display: none;
+    }
+
+    #nav-bar {
+        justify-content: right;
+    }
+
+    #grid-container {
+        grid-template-rows: 30rem 4rem 30rem 4rem 30rem 15rem 2rem;
+    }
+
+    #jumbotron {
+        background-size: cover;
+    }
+
+    #jumbotron-text {
+        width: 500;
+        font-size: 0.8rem;
+    }
+
+    #about-title {
+        font-size: 1.0rem;
+    }
+
+    #about-description {
+        font-size: 0.9rem;
+    }
+
+    #projects-description {
+        font-size: 0.9rem;
+    }
+
+    #projects-title {
+        font-size: 1.0rem;
+        padding-top: 12%;
+    }
+    
+    #contact {
+        font-size: 0.7rem;    
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+    #nav-container {
+        font-size: 0.8rem;
+    }
+    #nav-name{
+        display: none;
+    }
+
+    #grid-container {
+        position: relative;
+        top: 3rem;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20rem 3rem 18rem 12rem 3rem 20rem 20rem 10rem 2rem;
+    }
+    
+    #jumbotron {
+        grid-area: 1 / 1 / 2 / 2;
+        background-image: url('jumbotron2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .dark-filter {
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: black;
+        opacity: 0.3;
+        background-size: cover;
+    }
+    
+    #jumbotron-text {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 320px;
+        font-family: 'Merriweather', serif;
+        font-size: 8px;
+        color: white;
+        z-index: 900;
+        padding: 170px 10% 0 10%;
+        justify-self: center;
+    }
+    
+    #about-title {
+        grid-area: 2 / 1 / 3 / 2;
+        background-color: #1A1B41;
+        font-size: 1.0rem;
+        padding-bottom: 12%;
+    }
+    
+    #about-description {
+        grid-area: 3 / 1 / 4 / 2;
+        background-color: #1A1B41;
+        font-size: 0.6rem;
+        justify-content: center;
+        padding: 5% 15% 0 15%;
+    }
+    
+    #about-pic {
+        grid-area: 4 / 1 / 5 / 2;
+        background-image: url('quick-intro-thumb.png');
+        background-repeat: no-repeat;
+        background-size: auto 20rem;
+        justify-self: auto;
+        background-position: 35% 0;
+    }
+    
+    #light-filter {
+        grid-area: 4 / 1 / 5 / 2;
+        background-color: white;
+        opacity: 0.15;
+        background-size: cover;
+    }
+    
+    #projects-title {
+        grid-area: 5 / 1 / 6 / 2;
+        font-size: 1.0rem;
+        padding-top: 1.5rem;
+    }
+    
+    #project-pic-container {
+        grid-area: 7 / 1 / 8 / 2;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-bottom: 5%;
+}
+
+    #project-pic1 {
+        background-size: 75% auto;
+        background-position: 50% 10%;
+    }
+
+    #project-pic2 {
+        background-size: 75% auto;
+        background-position: 50% 0;
+    }
+
+    #projects-description {
+        grid-area: 6 / 1 / 7 / 2;
+        color: #1A1B41;
+        font-size: 0.9rem;
+        justify-content: center;
+        padding: 0 18% 15% 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #contact {
+        grid-area: 8 / 1 / 9 / 2;
+        font-size: 0.5rem;
+        padding: 15% 0 10% 0;    
+    }
+    
+    .github-button {
+        font-size: 0.6rem;
+        padding: 0.8rem;
+        border: 1px solid #F8F0E3;
+        border-radius: 2em;
+    }
+    
+    .github-button:hover {
+        border: 1px solid #1A1B41;
+    }
+    
+    .download-button {
+        font-size: 0.6rem;
+        padding: 0.6rem;
+        border: 1px solid #373F51;
+        border-radius: 2em;
+        margin-bottom: 20%;
+    }
+    
+    .download-button:hover {
+        border: 1px solid #f2f2f2;
+    }
+
+    #footer {
+        grid-area: 9 / 1 / 10 / 2;
+        justify-self: left;
+    }
+    
 }
