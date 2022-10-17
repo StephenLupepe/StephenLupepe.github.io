@@ -1,12 +1,9 @@
 //To do:
-//FIX: unable to turn off standard animation method (and hence use attack animation method) for the second part of a throw
-
-//add 3 round system and set win messages
 //adjust special attack to show the chracter glowing when available
 //make priestesses standard attack into a projectile
-//add command guides
 
 //Extras: 
+//add throws and special moves
 //add more music tracks, stages and characters
 //add cpu opponent
 
