@@ -1,6 +1,6 @@
 const music = {
     battle: new Howl({
-        src: './audio/BIg_Baddies.mp3',
+        src: './audio/Big_Baddies.mp3',
         loop: true,
         volume: 0.2,
         html5: true
