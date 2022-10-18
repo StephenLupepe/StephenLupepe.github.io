@@ -261,7 +261,7 @@ a.nav-link {
     }
 
     #p4-description {
-        font-size: 1.0  rem;
+        font-size: 1.0rem;
     }
 
     #p5-description {
@@ -363,7 +363,6 @@ a.nav-link {
         color: #1A1B41;
         font-size: 0.7rem;
         justify-content: center;
-        padding: 10% 15% 0 15%;
     }
     
     #p4-pics-container {
@@ -381,7 +380,6 @@ a.nav-link {
         background-color: #1A1B41;
         font-size: 0.7rem;
         justify-content: center;
-        padding: 10% 15% 0 15%;
     }
     
     #p5-pics-container {
